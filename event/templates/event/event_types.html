@@ -1,0 +1,76 @@
+{% load static %}
+  {% include "event/header.html" %}
+  
+  <div class="container">
+    <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-4">
+                <div class="showschl rw m_b_15"><span class="opensamibld"></span><span class="opensamibld"></span></div> 
+                <div class="subject_bx rw m_b_15">
+                    <h3 class="m_t_0"><b>Date:</b></h3>
+                    <ul>
+                        <li><a href="{% url 'event:events'%}" ><p>Upcoming</p></a></li>
+                        <li><a href="{% url 'event:events'%}" ><p>Past</p></a></li>
+                    </ul>
+                    <h3 class="m_t_0"><b>Price:</b></h3>
+                    <ul>
+                        <li><a href="?price=free"><p>Free</p></a></li>
+                        <li><a href="?price=paid"><p>Paid</p></a></li>
+                    </ul>
+                    <h3 class="m_t_0"><b>Event Categories:</b></h3> 
+                    <ul>
+                        {% for event_category in event_categories %}  
+                            <li>
+                                <a href="?cat={{event_category.url_key}}" ><p>{{event_category.name}}</p></a>
+                            </li>
+                         {% endfor %}
+                                            </ul>
+                </div>
+            </div>
+            
+            <div class="col-lg-9 col-md-9 col-sm-8">
+                <div class="search_sortby rw m_b_15 text-right">
+                    <h2><b>{{request.path|slice:"15:"|slice:"-1"|upper }}</b></h2>
+                </div>
+
+                <div class="col-lg-9 col-md-9 col-sm-8">
+                    <div class="galry_aside rw">
+                        <ul>
+                        {% for event in events %} 
+                            <li><a href="{% url 'event:events'%}event/index/{{event.url_key}}"><img src="/media/{{event.logo}}" height="200" width="400"></a>
+                                <figcaption><a href="{% url 'event:events'%}event/index/{{event.url_key}}"><h4>{{event.event_name}}</h4></a><p>{{event.tag_line}}</p></figcaption></li>
+                                
+                        {% endfor %}
+                        </ul>
+                    </div>
+             {% if is_paginated %}       
+	             <ul class="pagination">
+				
+				{% if events.has_previous %}
+					<li><a href="?page={{ events.previous_page_number }}" data-ci-pagination-page="{{ events.previous_page_number }}"><i class="fa fa-chevron-left"></i></a></li>
+				{% endif %}
+				
+				
+				{% for pages in events.paginator.page_range  %}
+				{% if events.number == pages %}
+	         		<li class="active"><a href="?page={{ pages }}">{{ pages }}</a></li>
+			    {% else %}
+			         <li><a href="?page={{ pages }}">{{ pages }}</a></li>
+			    {% endif %}
+									
+	           {% endfor %} 
+	           
+								    
+				{% if events.has_next %}
+					<li><a href="?page={{ events.next_page_number }}" data-ci-pagination-page="{{ events.next_page_number }}"><i class="fa fa-chevron-right"></i></a></li>
+				{% endif %}
+	           </ul>
+			{% endif %}
+                </div>
+            </div>
+        <div class="col-md-20">
+                   </div>
+    </div>
+</div>
+            <br>
+            
+            {% include "event/footer.html" %}

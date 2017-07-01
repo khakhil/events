@@ -1,0 +1,923 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:s="http://jadedpixel.com/-/spec/shopify">
+  <id>http://www.frenchwineshop.co.uk/collections/all.atom</id>
+  <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/collections/all"/>
+  <link rel="self" type="application/atom+xml" href="http://www.frenchwineshop.co.uk/collections/all.atom"/>
+  <title>French Wine Shop</title>
+  <updated>2016-02-17T13:07:51+00:00</updated>
+  <author>
+    <name>French Wine Shop</name>
+  </author>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763350854</id>
+    <published>2016-02-17T13:07:51+00:00</published>
+    <updated>2016-02-17T13:07:51+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781647"/>
+    <title>Schloss Reinhartshausen Wisselbrunnen Auslese 2009</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781647.jpeg?v=1455714472" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            16.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>A very high-class Auslese from Schloss Reinhartshausen which is intense, balanced and very good indeed for the price. It has the poise and character of a far more expensive wine and will be an absolute show-stopper at any dinner table.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763350854</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">16.95</s:price>
+      <s:sku>3461781647</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763350662</id>
+    <published>2016-02-17T13:07:50+00:00</published>
+    <updated>2016-02-17T13:07:50+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781649"/>
+    <title>Schloss Reinhartshausen Estate Riesling 2012&#xA0;</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781649.jpeg?v=1455714471" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            12.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>The excellent estate Riesling is just what we have been looking for. A finely crafted, dry and remarkably complex Riesling at a very reasonable price. Highly recommended.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763350662</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">12.95</s:price>
+      <s:sku>3461781649</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763350470</id>
+    <published>2016-02-17T13:07:50+00:00</published>
+    <updated>2016-02-17T13:07:50+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781923"/>
+    <title>Tenuta Giustini Fiano &#x2018;Illuminato&#x2019; 2014</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781923.jpeg?v=1455714470" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            10.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Quality Italian whites have enjoyed a renaissance in recent years and at the forefront is Fiano. Relatively unknown 20 years ago, it is now recognised as a grape with great potential, capable of producing deliciously aromatic, rich and fresh whites. What’s more they are still remarkably cheap. This offering from Tenuta Giustini in Puglia is the finest we’ve tried by a long shot, showing extraordinary balance and complexity for the price. A must buy</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763350470</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">10.95</s:price>
+      <s:sku>3461781923</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763350278</id>
+    <published>2016-02-17T13:07:49+00:00</published>
+    <updated>2016-02-17T13:07:49+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781709"/>
+    <title>Portal da Tojeira Vinho Verde 2014</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781709.jpeg?v=1455714469" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            7.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Vinho Verde has been making quite a name for itself in recent years as an extraordinarily affordable, delicious summer wine. Portal da Tojeira is a very fine example – light in alcohol at 11.5% abv, with crisp acidity, fresh citrus fruits and the slight sparkle that the wine is famous for. It is exceptionally easy drinking and a bargain at £6.95 a bottle. Drink 2015 – 2016. <br>
+ <br>
+ Was £8.95 Now £7.95</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763350278</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">7.95</s:price>
+      <s:sku>3461781709</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763350086</id>
+    <published>2016-02-17T13:07:48+00:00</published>
+    <updated>2016-02-17T13:07:48+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781689"/>
+    <title>Ch&#xE2;teau La Tour Carnet, Haut-M&#xE9;doc, 4&#xE8;me Cru Class&#xE9; 2010</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781689.jpeg?v=1455714468" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            31.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>"Probably La Tour Carnet’s best since their 2001, the 2010 La Tour Carnet exhibits wonderful ripeness, a dense ruby/purple color, notes of licorice, camphor and some toast as well as lots of black currant and blueberry fruit. It is medium to full-bodied, with attractive sweetness of tannin, good acidity, excellent delineation to its component parts, and a full-bodied, impressively long finish. This wine may close down somewhat, given the moderate tannins, but it seems relatively accessible despite being a 2010. 93 Points Robert Parker</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763350086</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">31.95</s:price>
+      <s:sku>3461781689</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763349958</id>
+    <published>2016-02-17T13:07:47+00:00</published>
+    <updated>2016-02-17T13:07:47+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461782019"/>
+    <title>Tio Pepe Palomino Fino</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461782019.jpeg?v=1455714468" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            6.45
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>"This is the sherry that demonstrates that big brands can also be good to drink. Tio Pepe is a classic, clear and bright and with a delicious salty tang. Follow my holiday tactic and make your Tio &amp; tonic with three or four parts tonic to one of sherry. - Victoria Moore"</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763349958</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">6.45</s:price>
+      <s:sku>3461782019</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763349894</id>
+    <published>2016-02-17T13:07:46+00:00</published>
+    <updated>2016-02-17T13:07:46+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781625"/>
+    <title>Tenuta Giustini Vecchio Sogno Negroamaro 2012</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781625.jpeg?v=1455714467" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            9.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>A very exciting find from Salento in the heel of Italy. Negroamaro is a speciality of the region and this hand crafted example from the Longo family estate is rich, perfumed and far cheaper than it should be. A revelation to the uninitiated.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763349894</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">9.95</s:price>
+      <s:sku>3461781625</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763349766</id>
+    <published>2016-02-17T13:07:45+00:00</published>
+    <updated>2016-02-17T13:07:45+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781879"/>
+    <title>Tenuta Giustini Primitivo &apos;Pat&#xF9;&apos;, Salento 2013</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781879.jpeg?v=1455714466" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            9.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Another very exciting find from Salento in the heel of Italy. The hand-harvested grapes are given a prolonged maceration on their skins to increase the ripeness and body of the wine. The result, combined with the influence of the hot Southern Italian climate, is a stunning and rich red with complexity and intensity almost impossible to find under £10 a bottle.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763349766</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">9.95</s:price>
+      <s:sku>3461781879</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763349574</id>
+    <published>2016-02-17T13:07:44+00:00</published>
+    <updated>2016-02-17T13:07:44+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781651"/>
+    <title>Chateau Teyssier, St-&#xC9;milion 2012 Magnum</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781651.jpeg?v=1455714464" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            39.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763349574</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">39.95</s:price>
+      <s:sku>3461781651</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763349382</id>
+    <published>2016-02-17T13:07:43+00:00</published>
+    <updated>2016-02-17T13:07:43+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781679"/>
+    <title>Chateau Teyssier, St-&#xC9;milion 2011 Bottle</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781679.jpeg?v=1455714463" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            16.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Jonathan Maltus' Chateau Teyssier 2011 is a much finer wine than we were expecting (and our expectations were high…). It is packed with luscious rich fruit in much the same mould as his 2010. The price is on the button and back down to 2006/2007 levels.<br>
+ <br>
+ Was £18.95 Now £16.95</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763349382</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">16.95</s:price>
+      <s:sku>3461781679</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763349254</id>
+    <published>2016-02-17T13:07:42+00:00</published>
+    <updated>2016-02-17T13:07:42+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781621"/>
+    <title>Temilobos Single Estate 2011</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781621.jpeg?v=1455714462" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            9.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>The Delaforce family have been at the heart of the wine business in the Douro since 1834 and the single vineyard 'Temilobos' is the flagship dry red of their estate — their pride and joy. The Douro is increasingly famed for the quality and value of its wines and the Temilobos 2011 is a magnificent example at a remarkable price.<br>
+ <br>
+ Was £11.95 Now £9.95</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763349254</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">9.95</s:price>
+      <s:sku>3461781621</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763349062</id>
+    <published>2016-02-17T13:07:41+00:00</published>
+    <updated>2016-02-17T13:07:41+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781653"/>
+    <title>Puligny-Montrachet, Moillard-Grivot 2013</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781653.jpeg?v=1455714461" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            29.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>From one of the finest appellations within Burgundy this is a sumptuous, rich Puligny at an astonishingly good price for a wine of this quality and pedigree. Drinking well now with a good 5-7 years ahead of it. A real treat.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763349062</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">29.95</s:price>
+      <s:sku>3461781653</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763348870</id>
+    <published>2016-02-17T13:07:40+00:00</published>
+    <updated>2016-02-17T13:07:40+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781655"/>
+    <title>Meursault, Clos des Tessons, Moillard-Grivot 2013</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781655.jpeg?v=1455714460" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            29.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Top notch Meursault from one of the best communes within this most illustrious of Burgundian appellations. It is already starting to drink well but it will improve over the next 4 or so years. Lovely rich, buttery and slightly nutty flavours. This is a very serious white wine and all you’d expect from this excellent appellation.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763348870</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">29.95</s:price>
+      <s:sku>3461781655</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763348742</id>
+    <published>2016-02-17T13:07:39+00:00</published>
+    <updated>2016-02-17T13:07:39+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781683"/>
+    <title>Chassagne Montrachet: Moillard-Grivot 2013</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781683.jpeg?v=1455714460" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            29.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Where the Vineyards of Chassagne meet Montrachet is often described as the treasure at the end of the fine white Burgundian rainbow. This is very fine white Burgundy, as you would expect from this appellation of a mere 350 hectares. 2013 was a small harvest but a very good Burgundy vintage, from which it is extraordinary to find a Chassagne Montrachet for under £30.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763348742</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">29.95</s:price>
+      <s:sku>3461781683</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763348614</id>
+    <published>2016-02-17T13:07:38+00:00</published>
+    <updated>2016-02-17T13:07:38+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781637"/>
+    <title>Coteaux Bourguignons, Moillard Grivot 2012</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781637.jpeg?v=1455714459" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            9.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>A wonderfully fresh and fruity Pinot Noir – Gamay blend from this newly created Burgundian appellation. Soft and elegant in style it nonetheless has good grip and sufficient body for drinking with food. Delicious, and a bargain for those seeking tasty red Burgundy at an everyday price.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763348614</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">9.95</s:price>
+      <s:sku>3461781637</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763348486</id>
+    <published>2016-02-17T13:07:37+00:00</published>
+    <updated>2016-02-17T13:07:37+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3490968621"/>
+    <title>Summer Tasting Ticket</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3490968621.jpeg?v=1455714458" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            10.00
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Wednesday 25th May 2016 7.00pm - 9.00pm<br>
+ <br>
+ The Chelsea Gardener, 125 Sydney Street, SW3 6NR<br>
+ <br>
+ Join us for the FVD Summer Wine Tasting at the Chelsea Gardener. We’ll have a selection of our most popular wines and new additions for you to taste. Also in attendance will be some of the producers to walk you through their process as well as the wines themselves.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763348486</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">10.00</s:price>
+      <s:sku>3490968621</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763348166</id>
+    <published>2016-02-17T13:07:36+00:00</published>
+    <updated>2016-02-17T13:07:36+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781693"/>
+    <title>St.-Julien: Bordeaux 2010</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781693.jpeg?v=1455714456" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            19.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>"...it doesn't take a mastermind to work out who made the wine, and it is from a top vintage (where the Grand Vin is selling at £290 per bottle)." Tom Cannavan<br>
+ <br>
+ An exquisite wine declassified from one of the 'Super Second' growths in the heart of St Julien—and from the great 2010 vintage. A very serious high quality Claret with a profound richness which makes it very approachable when young as well as giving it considerable longevity (10 years+). The Château wine of the same vintage sells for over £2000 a case making this a bargain.......</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763348166</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">19.95</s:price>
+      <s:sku>3461781693</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763348102</id>
+    <published>2016-02-17T13:07:35+00:00</published>
+    <updated>2016-02-17T13:07:35+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461782021"/>
+    <title>The Sporting Mixed Case</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461782021.jpeg?v=1455714456" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            149.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>The perfect selection of wines to accompany a weekends shooting and fishing.<br>
+ <br>
+ 2x Château Moulin des Richards Cuvée Prestige 2010 <br>
+ <br>
+ 2x Mercurey, La Tour de Brully, Champ-Pillot, 2013  <br>
+ <br>
+ 2x Château de la Négly, Languedoc La Côte 2013  <br>
+ <br>
+ 2x Côtes du Rhône Villages: Domaine les Grands Bois Cuvée Maximilien Cairanne 2013  <br>
+ <br>
+ 2xMontagny 1er Cru: Les Loges Vieilles Vignes 2011 <br>
+  <br>
+ 1x Sipsmith Sloe Gin  <br>
+ <br>
+ 1x Churchill's Finest Reserve Port NV</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763348102</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">149.95</s:price>
+      <s:sku>3461782021</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763347974</id>
+    <published>2016-02-17T13:07:34+00:00</published>
+    <updated>2016-02-17T13:07:34+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781747"/>
+    <title>Ch&#xE2;teau Ph&#xE9;lan S&#xE9;gur, St-Est&#xE8;phe 2010</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781747.jpeg?v=1455714455" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            39.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>One of the best Cru Bourgeois estates in St-Estèphe and a property that has been on a steady rise ever since Xavier Gardinier (Pommery &amp; Lanson) bought it in the mid-80s . Renowned winemaker, Michel Rolland, is consultant oenologist and helps produce consistent, well balanced wines with lots of good dark fruit, and hints of coffee and tobacco. The 2010 affirms Phélan Ségur’s reputation as a real over-performer.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763347974</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">39.95</s:price>
+      <s:sku>3461781747</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763347782</id>
+    <published>2016-02-17T13:07:34+00:00</published>
+    <updated>2016-02-17T13:07:34+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461782005"/>
+    <title>Six of the Best Case</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461782005.jpeg?v=1455714454" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            99.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>One bottle of each of the following wine<br>
+ <br>
+ 1x Pauillac, De-Classified Selection 2012<br>
+ 1x Mercurey, La Tour de Brully, Champ-Pillot, 2013<br>
+ 1x Saint-Véran, Merloix 2012<br>
+ 1x Ruffin et Fils Cuvée de Reserve NV<br>
+ 1x Churchill's Port Reserve NV<br>
+ 1x Haut Charmes, Sauternes 2010 Half Bottle</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763347782</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">99.95</s:price>
+      <s:sku>3461782005</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763347718</id>
+    <published>2016-02-17T13:07:33+00:00</published>
+    <updated>2016-02-17T13:07:33+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461782001"/>
+    <title>Serge Mathieu, Brut Ros&#xE9; Six Bottle Case</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461782001.jpeg?v=1455714453" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            173.70
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>The perfect present for the Pink Champagne Lover <br>
+ <br>
+ Discovered in an exclusive Right Bank Paris wine bar, Serge Mathieu's Champagne is a revelation and is what really good Champagne is all about.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763347718</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">173.70</s:price>
+      <s:sku>3461782001</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763347526</id>
+    <published>2016-02-17T13:07:30+00:00</published>
+    <updated>2016-02-17T13:07:30+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781657"/>
+    <title>Serge Mathieu, Brut Ros&#xE9;</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/3461781657.jpeg?v=1455714453" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            28.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Discovered in an exclusive Right Bank Paris wine bar, Serge Mathieu's Champagne is a revelation and is what really good Champagne is all about.<br>
+ <br>
+ The 'Pink' made by Michel and Isabelle Mathieu is gorgeous—a beautifully made Pink Champagne that knocks spots off most of the Grand Cru Rosé Champagnes that are £10-20 a bottle more. Sadly, though, they only make a very small quantity so stocks are limited.</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763347526</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">28.95</s:price>
+      <s:sku>3461781657</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763347078</id>
+    <published>2016-02-17T13:07:29+00:00</published>
+    <updated>2016-02-17T13:07:29+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781885"/>
+    <title>Ch&#xE2;teau Sainte Marie, Vieilles Vignes Entre-Deux-Mers 2014 150cl Magnum</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/noimage_d871a381-6ced-49f5-a5b5-218464e2cc33.gif?v=1455714449" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            19.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Château Saint-Marie is now acknowledged as making one of the very best dry white Bordeaux in the Entre-Deux-Mers region alongside Château Bauduc &amp; Bonnet to the post. The blend of Sauvignon (crisp lemon freshness) and Sémillon (rich &amp; full bodied) with a dash of Muscadelle (floral scent), all from a selection of the estat'es best old vines, make the perfect affordable everyday white Bordeaux. The Dupuch family who have led the revolution in winemaking in the region have produced an exceptional 2014....well done!</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763347078</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">19.95</s:price>
+      <s:sku>3461781885</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763347142</id>
+    <published>2016-02-17T13:07:29+00:00</published>
+    <updated>2016-02-17T13:07:29+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781883"/>
+    <title>Ch&#xE2;teau Sainte Marie, Vieilles Vignes Entre-Deux-Mers 2014 37.5cl Half Bottle</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/noimage_40971deb-3c3e-431c-9e6d-db334c781e70.gif?v=1455714450" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            5.45
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Château Saint-Marie is now acknowledged as making one of the very best dry white Bordeaux in the Entre-Deux-Mers region alongside Château Bauduc &amp; Bonnet to the post. The blend of Sauvignon (crisp lemon freshness) and Sémillon (rich &amp; full bodied) with a dash of Muscadelle (floral scent), all from a selection of the estat'es best old vines, make the perfect affordable everyday white Bordeaux. The Dupuch family who have led the revolution in winemaking in the region have produced an exceptional 2014....well done!</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763347142</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">5.45</s:price>
+      <s:sku>3461781883</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+  <entry>
+    <id>http://www.frenchwineshop.co.uk/products/4763346950</id>
+    <published>2016-02-17T13:07:28+00:00</published>
+    <updated>2016-02-17T13:07:28+00:00</updated>
+    <link rel="alternate" type="text/html" href="http://www.frenchwineshop.co.uk/products/3461781887"/>
+    <title>Ch&#xE2;teau Sainte Marie, Vieilles Vignes Entre-Deux-Mers 2014 75cl Bottle</title>
+    <s:type></s:type>
+    <s:vendor>From Vineyards Direct</s:vendor>
+    <summary type="html">
+      <![CDATA[<table border="0">
+  <tr>
+    <td width="200"><img width="200" src="https://cdn.shopify.com/s/files/1/0518/4069/products/noimage_52f55e9f-7402-4412-a715-e80ae55fe41a.gif?v=1455714448" /></td>
+    <td valign="bottom">
+      <p>
+        <strong>Vendor: </strong>From Vineyards Direct<br>
+        <strong>Type: </strong><br>
+        <strong>Price: </strong>
+            8.95
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>Château Saint-Marie is now acknowledged as making one of the very best dry white Bordeaux in the Entre-Deux-Mers region alongside Château Bauduc &amp; Bonnet to the post. The blend of Sauvignon (crisp lemon freshness) and Sémillon (rich &amp; full bodied) with a dash of Muscadelle (floral scent), all from a selection of the estat'es best old vines, make the perfect affordable everyday white Bordeaux. The Dupuch family who have led the revolution in winemaking in the region have produced an exceptional 2014....well done!</p></td>
+  </tr>
+</table>
+]]>
+    </summary>
+    <s:variant>
+      <id>http://www.frenchwineshop.co.uk/products/4763346950</id>
+      <title>Default Title</title>
+      <s:price currency="GBP">8.95</s:price>
+      <s:sku>3461781887</s:sku>
+      <s:grams/>
+    </s:variant>
+  </entry>
+</feed>

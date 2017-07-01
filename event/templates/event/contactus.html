@@ -1,0 +1,80 @@
+{% load static %}
+ {% include "event/header.html" %}
+    <div class="container">
+        <hr><h3 class="section-title">Contact</h3><hr>
+        <div class="row">
+            <div class="container  m_b_30">
+                <div class="row">
+                    <div class="col-md-5 col-xs-12 col-sm-5">
+                        <div class="contact-info">
+                            <p ><b >Address:</b> 
+                            441, Sunny Mart, Atish Market, Mansarowar, Jaipur</p>
+                            <p><b>Email:</b>info@theweblogics.com <a href="info@theweblogics.com">
+                                </a></p>
+                            <p><b>Phone:</b>9828995709
+                            </p>
+                            <div class="social"><a href=""><i class="ic_inf fa fa-facebook"></i></a> <a href=""><i class=" ic_inf fa fa-twitter"></i></a> <a href=""><i class="ic_inf fa fa-linkedin"></i></a> <a href=""><i class="ic_inf fa fa-google-plus"></i></a> <a href=""><i class="ic_inf fa fa-skype"></i></a> <a href=""><i class="ic_inf fa fa-youtube"></i></a></div>
+                        </div> 						
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                    
+                    <div class="form-message" id="login-result">
+                        <br>
+                            {% if errors %}
+                                {% for error in errors %}
+                                <li style="text-align: left; list-style-type:none;">
+                                <span class="text-danger"><i class="fa fa-times-circle"></i> {{error}}</span>
+                                </li>
+                                {% endfor %}
+                            
+                            {% elif message_success %}
+                            	<li style="text-align: left; list-style-type:none;">
+                                <span class="text-success"><i class="fa fa-check-circle"></i>{{message_success}}</span>
+                                </li>
+                               {% endif %}
+                            </div>
+                    
+                    
+                    <div class="col-md-6 col-xs-11 col-sm-6">
+                        <form method="post"><input type="hidden" name="__token" value="">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">Name</label>
+                                <div class="col-sm-10">
+                                    <input placeholder="Username" type="text" name="name" id="name" value="" class="form-control"/>
+                                                                    </div>
+                            </div><br/><br/><br/>
+                                <div class="form-group">
+                                    <label class="col-sm-2 col-sm-2 control-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <input placeholder="Email address" type="text" name="email" id="email" value="" class="form-control"/>
+                                                                            </div>
+                                </div><br/><br/>
+                                <div class="form-group">
+                                    <label class="col-sm-2 col-sm-2 control-label">Phone </label>
+                                    <div class="col-sm-10">
+                                        <input placeholder="Phone number" type="text" name="phone" id="phone" value="" class="form-control"/>
+                                                                            </div>
+                                </div><br/><br/>
+                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">Subject</label>
+                                <div class="col-sm-10">
+                                    <input placeholder="Subject" type="text" name="subject" id="subject" value="" class="form-control"/>
+                                                                    </div>
+                            </div><br/><br/>
+                            <div class="form-group">
+                                <label class="col-sm-2 col-sm-2 control-label">Message</label>
+                                <div class="col-sm-10">
+                                    <textarea placeholder="Write you message here..." class="form-control" name="message" id="message"></textarea>                        
+                                                                    </div>
+                            </div><br/><br/>
+                            <button class="btn btn-primary" type="submit">Submit</button>
+                            </form>                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>             <br>
+            {% include "event/footer.html" %}

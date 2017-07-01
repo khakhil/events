@@ -1,0 +1,66 @@
+{% load static %}
+  {% include "event/header.html" %}
+  
+    <div class="container">
+    <div class="row">
+        
+        <div class="col-md-9">
+        <div class="col-lg-3 col-md-3 col-sm-4">
+            <div class="showschl rw m_b_15"><span class="opensamibld"></span><span class="opensamibld"></span></div> 
+            <div class="location rw m_b_15">
+                <div class="subject_bx rw m_b_15">
+                    <h3 class="m_t_0"><b>Event Types:</b></h3> <hr/>
+                    <ul>
+                          {% for event_type in event_types %}
+                            <li>
+                                <a href="{{event_type.url_key}}" ><p>{{event_type.name}}</p></a>
+                            </li>
+                          {% endfor %}
+                                            </ul>
+                </div>
+            </div> 
+        </div>
+        
+        <div class="col-lg-9 col-md-9 col-sm-8">
+            <div class="search_sortby rw m_b_15 text-right">
+            
+                <h2><b>{{request.path|slice:"15:"|slice:"-1"|upper }}</b></h2>
+            </div>
+            <div class="galry_aside rw">
+                <ul>
+                {% for event in events %}
+                        <li><a href="{% url 'event:events'%}event/index/{{event.url_key}}"><img src="/media/{{event.logo}}" height="200" width="400"></a>
+                        <figcaption><a href="{% url 'event:events'%}event/index/{{event.url_key}}"><h4>{{event.event_name}}</h4></a><p></p></figcaption></li>
+                     {% endfor %}
+            </div>
+            	
+            {% if is_paginated %}		
+				<ul class="pagination">
+				
+				{% if events.has_previous %}
+					<li><a href="?page={{ events.previous_page_number }}" data-ci-pagination-page="{{ events.previous_page_number }}"><i class="fa fa-chevron-left"></i></a></li>
+				{% endif %}
+				
+				
+				{% for pages in events.paginator.page_range  %}
+				{% if events.number == pages %}
+	         		<li class="active"><a href="?page={{ pages }}">{{ pages }}</a></li>
+			    {% else %}
+			         <li><a href="?page={{ pages }}">{{ pages }}</a></li>
+			    {% endif %}
+									
+	           {% endfor %} 
+	           
+								    
+				{% if events.has_next %}
+					<li><a href="?page={{ events.next_page_number }}" data-ci-pagination-page="{{ events.next_page_number }}"><i class="fa fa-chevron-right"></i></a></li>
+				{% endif %}
+	           </ul>
+	          {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+            <br>
+            {% include "event/footer.html" %}

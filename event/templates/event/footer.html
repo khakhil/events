@@ -1,0 +1,128 @@
+    {% load static %}
+            <footer class="footer m_t_30"> 
+                <div class="footer_top grey1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-6  contact_info ">
+                                <h3>Contact Us</h3>
+                                <div class="rw  m_b_10"><i class="ic_inf fa fa-map-marker"></i> <p>Sunny Mart, Atish Market, Jaipur (Rajasthan)</p></div> 
+                                <div class="rw  tel_botm m_b_10"><i class="ic_inf fa fa-phone"></i> <p>9828995709</p></div> 
+                              
+                                <div class="rw social">
+                                    <a href="https://www.facebook.com/eventswheel.com"><i class="fa fa-facebook-square"></i></a> 
+                                    <a href="https://twitter.com/eventswheel.com"><i class="fa fa-twitter-square"></i></a> 
+                                    <a href="https://www.linkedin.com/company/eventswheel"><i class="fa fa-linkedin-square"></i></a> 
+                                    <a href="https://plus.google.com/eventswheel"><i class="fa fa-google-plus-square"></i></a> 
+                                </div> 
+                                <div class="clearfix"></div>
+                            </div> 
+                            <div class="col-lg-5 col-md-5 col-sm-6 recentpost">
+                                <h3>Blogs</h3>
+                                <ul>
+                                                                        <li>
+                                        <div class="sml_thumbnl"><img src="/media/image2.jpg" class="img-circle" alt="img"/></div>
+                                        <p class="m_b_0">blog1</p>
+                                        <p class="grey2 m_b_0">2016-05-14 09:11:30</p>
+                                    </li> 
+                                                                        <li>
+                                        <div class="sml_thumbnl"><img src="/media/image3.jpg" class="img-circle" alt="img"/></div>
+                                        <p class="m_b_0">blog2</p>
+                                        <p class="grey2 m_b_0">2016-05-17 08:00:14</p>
+                                    </li> 
+                                                                    </ul>
+                                <div class="clearfix"></div>
+                            </div> 
+                            <div class="col-lg-3 col-md-3 col-sm-6 newsletter">
+                                <h3>Get Our Newsletter</h3>
+                                <p> </p> 
+<!--                                <form onsubmit="return newsletter_signup(this);">
+                                    <input value="Enter your email here..." type="text" class="t_bx_1 m_b_10"> 
+                                    <input type="submit" value="Subscribe" class="btn subscribe">
+                                </form>-->
+                            <form method="post" action="" id="contact-form" accept-charset="UTF-8" name="newsfrm"><input type="hidden" name="__token" value="">
+                            {% csrf_token %}
+                            
+                            <input type="hidden" value="customer" name="form_type" />
+                            <input type="hidden" name="utf8" value="✓" />
+                            <input type="hidden" name="contact[tags]" value="prospect,newsletter"/>
+                            <input type="hidden" name="contact[first_name]" value="Newsletter" />
+                            <input type="hidden" name="contact[last_name]" value="Subscriber" />
+                            <input type="email" id="email" class="t_bx_1 m_b_10" name="email" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Enter your email address..." />
+                            <input type='submit' class="btn subscribe" value="signup" name="signup"/>
+                        </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom font12 grey1">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-lg-4 col-md-4 col-sm-4 link1"><a href="">Privacy Policy</a> | <a href="">Term & Conditions</a></div>
+                            <div class="col-lg-4 col-md-4 col-sm-8 col-lg-push-4 col-md-push-4 text-right ">Copyright <span class="fa fa-copyright" aria-hidden="true"></span> 2017  events |  All Rights Reserved </div>
+                        </div>
+                    </div>
+                </div>
+            </footer> 
+            
+            
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src="{% static 'event/site/js/bootstrap.min1.js' %}"></script> 
+            
+            
+            <style>
+    .form_process .progress_div {
+        background-color: #fff;
+        background-image: url("../images/assets/loader2.gif");
+        background-position: center center;
+        background-repeat: no-repeat;
+        bottom: 0;
+        content: " ";
+        display: block !important;
+        left: 0;
+        opacity: 0.7;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .progress_div {
+        display: none;
+    }
+</style>
+<script>
+	$(document).ready(function() {
+	$('#myCarousel').carousel({
+	interval: 10000
+	})
+    $('#myCarousel').on('slid.bs.carousel', function() {
+    	//alert("slid");
+	});
+});
+	</script>
+            <script>
+                                    $(document).ready(function () {
+                                        $('#myCarousel').carousel({
+                                            interval: 10000
+                                        })
+                                        $('#myCarousel').on('slid.bs.carousel', function () {
+                                            //alert("slid");
+                                        });
+                                    });
+                                    function newsletter_signup(objForm) {
+                                        $.ajax({
+                                            type: 'POST',
+                                            data: $(objForm).serialize(),
+                                            url: 'http://jeetu-pc/events/welcome/insert',
+                                            success: function (data) {
+                                                document.getElementById('contact-form').style.visibility = 'hidden';
+                                            }
+                                        });
+                                        return false;
+                                    }
+
+            </script>
+            
+            
+            
+      </body>
+</html>
+     

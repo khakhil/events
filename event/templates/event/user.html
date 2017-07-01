@@ -1,0 +1,106 @@
+  {% load static %}
+  {% include "event/header.html" %}
+  <!-- Site Showcase -->
+<div class="site-showcase">
+    <!-- Start Page Header -->
+    <div class="page-header" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Login/Register</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Page Header -->
+</div>
+<!--echo $this->load->view('breadcrumbs', array('breadcrumbs'=>$breadcrumbs), TRUE); -->
+<!-- Start Content -->
+<div class="main" role="main">
+    <div id="content" class="content full">
+        <div class="container">
+            <div class="page">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="alert alert-default fade in">
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 login-form">
+                        <h3>Login</h3>
+                        <form name="loginform" id="loginform" method="post" role="form"><input type="hidden" name="__token" value="">
+                                {% csrf_token %}
+
+                            <p class="logreg-desc">Already a member of Events. Please use the form below to log in site.</p>
+                            <div class="form-message" id="login-result">
+                            {% if errors %}
+						            {% for error in errors %}
+						            <span class="text-danger"><i class="fa fa-times-circle"></i>{{error}}</span>
+						            {% endfor %}
+						    {% endif %}
+                            </div>
+                            <div class="logreg-content">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input type="text" class="form-control" id="username" name="username" placeholder="Username *" required="">
+                                </div>
+                                <br>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Password *" required="">
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" name="remember_me" value="1" /> Remember Me!
+                                </div>
+                                <button type="submit" name="loginform"  class="btn btn-primary">Login Now</button>                                
+                                <br/>
+                                <b>OR</b>
+                                <br/>
+                                <a class="btn btn-login btn-primary" href="{% url 'social:begin' 'facebook' %}"><i class="fa fa-facebook"></i> &nbsp;&nbsp;&nbsp;&nbsp; Login with Facebook</a>  
+                                <br/>
+                                <b>OR</b>
+                                <br/>
+                                <a class="btn btn-login btn-primary" href="{% url 'social:begin' 'google-oauth2' %}"><i class="fa fa-google-plus"></i>&nbsp;&nbsp;&nbsp;&nbsp;Login with Google</a>
+                                <br/>
+                                <b>OR</b>
+                                <br/>
+                                <a class="btn btn-login btn-primary" href="{% url 'social:begin' 'github' %}"><i class="fa fa-google-plus"></i>&nbsp;&nbsp;&nbsp;&nbsp;Login with GitHub</a>
+                                
+                            </div>
+                            <p class="logreg-desc">Lost your password? <a href="{% url 'event:password_reset'%}">Click here to reset</a>
+                            </p>
+                        </form>
+                    </div>
+                    
+                    
+                    
+                    <div class="col-md-4 col-sm-4 register-form">
+                        <h3>Register</h3>
+                        <form name="registerform" id="registerform" method="post" role="form"><input type="hidden" name="__token" value="">
+							{% csrf_token %}
+                            <p class="logreg-desc">Don't have an account? Please fill in the form below to create one.</p>
+                            <div class="form-message"></div>
+                            <div class="logreg-content">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email *" required=""  value="" />
+                                </div>
+                                                                <br/>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Password *" required="" value=""  />
+                                </div>
+                                                                <div class="form-group">
+                                    <div class="center-block g-recaptcha" data-sitekey="6LcN1QwTAAAAAOMJ6b0X6YKPne-1GWRcdJ4oR_X_"></div>
+                                </div>
+                                <input type="hidden" name="action" value="register" />                                                
+                            </div>
+                            <button type="submit" name="registerform" class="btn btn-primary">Register Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>            <br>
+            {% include "event/footer.html" %}

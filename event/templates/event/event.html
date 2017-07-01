@@ -1,0 +1,161 @@
+ {% load static %}
+ {% include "event/header.html" %}
+            <div class="srch_sec">
+    <div class="container">
+        <div class="srch_head text-center"><h1>Find Events in all over<br/>India</h1> 
+        </div>
+        <div class="clearfix"></div> 
+        <div class="srch_btm rw">
+            <div class="search_form">
+                <form action="" id="company-manage-form" method="post" class="form-horizontal adminex-form" enctype="multipart/form-data" accept-charset="utf-8"><input type="hidden" name="__token" value="">
+                {% csrf_token %}
+                <input type="text" name="keyword" id="keyword" placeholder="Keyword" value="" class="form-control txt_1"/>
+                <select class="form-control txt_2" type="text" name="city" id="city" value="" >
+                    <option></option>
+                    <option>Jaipur</option>
+                    <option>Goa</option>
+                    <option>Delhi</option>
+                    <option>Bangalore</option>
+                    <option>Kolkata</option>
+                    <option>Mumbai</option>
+                    <option>Gurgaon</option>
+                    <option>Hyderabad</option>
+                    <option>Ahmedabad</option>
+                </select>                 
+                <button class="btn" type="submit">Search</button>
+                </form>            </div></div>
+        <!--            <form class="search_form">-->
+
+        <!--                            <div>
+                                        <div>
+                                            <div>
+                                                <input type="text" class="form-control txt_1" name="keyword" id="keyword" value="" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <select class="form-control txt_2">
+                                            <option>Select City.........</option>
+                                            <option>Jaipur</option>
+                                            <option>Goa</option>
+                                            <option>Delhi</option>
+                                            <option>Bangalore</option>
+                                            <option>Kolkata</option>
+                                            <option>Mumbai</option>
+                                            <option>Gurgaon</option>
+                                            <option>Hyderabad</option>
+                                            <option>Ahmedabad</option>
+                                        </select> 
+                                        <button class="btn" type="submit">Search</button>
+                                    </div>-->
+        <!--</form>-->
+        <!--            <form class="search_form">
+                        <input type="text" class="form-control txt_1" placeholder="Keyword">
+                        <select class="form-control txt_2">
+                            <option>Select City.........</option>
+                            <option>Jaipur</option>
+                            <option>Goa</option>
+                            <option>Delhi</option>
+                            <option>Bangalore</option>
+                            <option>Kolkata</option>
+                            <option>Mumbai</option>
+                            <option>Gurgaon</option>
+                            <option>Hyderabad</option>
+                            <option>Ahmedabad</option>
+                        </select> 
+                        <input class="btn" value="Search" type="submit">
+                    </form>-->
+    </div>
+</div>
+</div>
+<section class="middle">
+    <div class="youneed">
+        <div class="container">
+            <h2>Most Popular <span class="opensbold">cities</span></h2> 
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 colbox">
+                    <figure class="colbox__figure"> <img class="colbox__img lazy" src="{% static 'event/images/jaipur.jpg' %}"  style="display: block;" height="600px" width="600px">
+                        <figcaption class="colbox__caption"> 
+                            <div> 
+                                <h5 class="colbox__title">Jaipur</h5>
+                                <p class="colbox__description"> Events</p>
+                            </div>
+                            <a class="js-tiles-link colbox__link" href="{% url 'event:events'%}events/jaipur/">View more</a>
+                        </figcaption>
+                    </figure>
+                </div> 
+                <div class="col-lg-6 col-md-6 col-sm-6 asidecol">
+                    <div class=" rw m_b_34"><figure class="colbox__figure colbox__figure--half"> <img class="colbox__img lazy" src="{% static 'event/images/bangalore.jpg' %}"  style="display: block;">
+                            <figcaption class="colbox__caption"> 
+                                <div> 
+                                    <h5 class="colbox__title colbox__title--half">Bangalore</h5>
+                                    <p class="colbox__description">Events </p>
+                                </div>
+                                <a class="js-tiles-link colbox__link" href="{% url 'event:events'%}events/bangalore/">View more</a>
+                            </figcaption>
+                        </figure></div> 
+                    <div class=" rw"><figure class="colbox__figure colbox__figure--half"> <img class="colbox__img lazy" src="{% static 'event/images/Goa.jpg' %}"  style="display: block;">
+                            <figcaption class="colbox__caption"> 
+                                <div> 
+                                    <h5 class="colbox__title colbox__title--half">Goa</h5>
+                                    <p class="colbox__description">Events</p>
+                                </div>
+                                <a class="js-tiles-link colbox__link" href="{% url 'event:events'%}events/goa/">View more</a>
+                            </figcaption>
+                        </figure></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trenschool">
+        <div class="galry_mid">
+            <div class="container">
+                <h2>Featured <span class="opensbold">Events</span></h2>
+                <div id="myCarousel" class="carousel slide">
+                    <!-- Carousel items -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="rw">
+                            {% for featured_event in featured_events %} 
+                                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                      
+                                        <div class="figure"><a href="{% url 'event:events'%}event/index/{{featured_event.url_key}}" ><img src="/media/{{featured_event.logo}}" alt="Image" class="img-responsive" height="200px" width="200px"></a>
+                                            <h5><a href="{% url 'event:events'%}event/index/{{featured_event.url_key}}">{{featured_event.event_name}}</a></h5> </div>
+                                    </div>                                           
+                                         {% endfor %}  
+                               </div>
+                            <!--/row-->
+                        </div>
+                        <!--/item-->
+                        <div class="item">
+                            <div class="rw">
+                            {% for featured_event in featured_events %} 
+                                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                                      
+                                        <div class="figure"><a href="{% url 'event:events'%}event/index/{{featured_event.url_key}}" ><img src="/media/{{featured_event.logo}}" alt="Image" class="img-responsive" height="200px" width="200px"></a>
+                                            <h5><a href="{% url 'event:events'%}event/index/{{featured_event.url_key}}">{{featured_event.event_name}}</a></h5> </div>
+                                    </div>           
+                                     
+                                        
+                                         {% endfor %}  
+                             </div>
+                            <!--/row-->
+                        </div>
+                        <!--/item-->
+                    </div>
+                    <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel" data-slide="prev"></a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function event_search(formObj) {
+        location.href = "http://jeetu-pc/events/events/index/" + url_encode(formObj.q.value);
+        return false;
+    }
+</script>
+
+            <br>
+            {% include "event/footer.html" %}
+
+            
