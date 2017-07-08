@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 from django.shortcuts import render
 from django.utils import timezone
 from django.views.generic import TemplateView, ListView, View
-from .models import ContactSubmissions, EventTypes, EventCategories, Events, Media, Speaker, Partners, Sponsers, EmailNewsletter, CategoriesOfEvents
+from .models import ContactSubmissions, EventTypes, EventCategories, Events, Media, Speaker, Partners, Sponsers, EmailNewsletter, CategoriesOfEvents, TypesOfEvents, EventTypes
 from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.decorators import login_required, permission_required
@@ -31,10 +31,11 @@ class UserView(TemplateView):
                 request.session.set_expiry(86400) #sets the exp. value of the session 
                 login(request, user) #the user 
                 user.last_login = timezone.now()
-                if next == "":
-                    return HttpResponseRedirect('/events/')
-                else:
-                    return HttpResponseRedirect(next)
+                return HttpResponseRedirect('/events/')
+#                 if next == "":
+#                     return HttpResponseRedirect('/events/')
+#                 else:
+#                     return HttpResponseRedirect(next)
             else:
                 errors = ["Invalid username or password !!!"]
                 return render(request, self.template_name, {'errors': errors})
@@ -54,7 +55,7 @@ class UserView(TemplateView):
                             return render(request, 'event/user.html', {'errors': errors})
                     except:  
                         User.objects.create_user(password=password, username=email, email=email, date_joined=timezone.now())
-                        return HttpResponseRedirect('/events/')
+                        return HttpResponseRedirect('/user/')
      
                 except Exception, err: 
                     return HttpResponse(str(err))
@@ -70,36 +71,71 @@ class LogOut(View):
     
 class EventsView(TemplateView):
     template_name = "event/event.html"
-    
-    def post(self, request):
+    model = Events
+#         search = self.request.GET.get('search')
+#         page = self.request.GET.get('page')
+#          
+#         if search is not None:
+#             event_types = EventCategories.objects.all()
+#                    
+#             events_data = Events.objects.values('event_name', 'tag_line', 'logo', 'url_key').order_by('event_start_date')
+#             events_data = events_data.filter(city=self.kwargs['city'])
+#             paginator = Paginator(events_data, self.paginate_by)
+#             try:
+#                 file_exams = paginator.page(page)
+#             except PageNotAnInteger:
+#                 file_exams = paginator.page(1)
+#             except EmptyPage:
+#                 file_exams = paginator.page(paginator.num_pages)
+#                
+#             context['events'] = file_exams
+#             context['event_types'] = event_types
+#             context['num_page'] = paginator.num_pages
+#         return render(self.request, 'event/event_detail.html',) 
         
-        if request.method == 'POST':
+    def post(self, request, *args, **kwargs):
+        if request.method == 'POST' and 'searchform' in request.POST:
+            keyword = request.POST.get('keyword')
+            city = request.POST.get('city')
+            event_types = EventCategories.objects.all()
+            events_data = Events.objects.values('event_name', 'tag_line', 'logo', 'url_key').order_by('event_start_date')
+            
+            if city is not "" or keyword is not "":
+                if city is not "":
+                    events_data = events_data.filter(city=city)
+                if city is not "":
+                    events_data = events_data.filter(event_name=keyword)
+                    
+                return render(self.request, 'event/city_events.html',{'events':events_data, 'event_types':event_types})   
+            
+             
+        elif request.method == 'POST' and 'newsfrm' in request.POST:
             email = request.POST.get('email')
             try:
-                email_reg = EmailNewsletter.objects.get(email=email)
-                    
+                EmailNewsletter.objects.get(email=email)
+                     
             except:  
                 EmailNewsletter.objects.create(email=email)
                 send_mail("Thank you connecting us",                                                   #subject
-                    '''Hi !!!
-
+                    '''Hi !!!.
+ 
 Welcome to events.com! Thanks so much for joining us. You’re on your way to super-productivity and beyond!.
 Prioritizer is a task management app that helps you focus on the important things in life by only allowing you to add 3 items a day. Set and track daily, weekly, and monthly priorities — and get the stuff that matters done.
-
+ 
 Our number one tip to get the most out of Prioritizer is to download our browser extension and give it a whirl. [how it helps] It’ll make sticking to your priorities super simple and just a click away.
-
+ 
 Have any questions? Just shoot us an email! We’re always here to help.
-
+ 
 Cheerfully yours,
 The Events Team''',                                                                            #body
-
+ 
 'johnfrancis012345@gmail.com',                                                                                  #server mail
-
+ 
 [request.POST.get('email'),])   
             return HttpResponseRedirect('/events/')
-          
+        return HttpResponseRedirect('/events/')  
     
-    def get(self, request):
+    def get(self, request, city=None):
         featured_events = Events.objects.filter(is_featured=1).values('event_name', 'tag_line', 'logo', 'url_key')[:8]
         context = {'featured_events': featured_events,}
         return render(request, 'event/event.html', context)
@@ -177,8 +213,9 @@ class CityEvent(ListView):
     model = Events
     template_name = "event/city_events.html"
     paginate_by = 4
-  
-    def get_context_data(self, **kwargs):        
+    
+            
+    def get_context_data(self, city=None, **kwargs):        
         context = super(CityEvent, self).get_context_data(**kwargs)
         page = self.request.GET.get('page')
           
@@ -187,7 +224,6 @@ class CityEvent(ListView):
         events_data = Events.objects.values('event_name', 'tag_line', 'logo', 'url_key').order_by('event_start_date')
         events_data = events_data.filter(city=self.kwargs['city'])
         paginator = Paginator(events_data, self.paginate_by)
-        print paginator.page
         try:
             file_exams = paginator.page(page)
         except PageNotAnInteger:
@@ -203,16 +239,15 @@ class CityEvent(ListView):
 class EventType(TemplateView):
     model = Events
     template_name = "event/event_types.html"
-    paginate_by = 1 
+    paginate_by = 1
     
     def get_context_data(self, **kwargs):
         context = super(EventType, self).get_context_data(**kwargs)
         
         event_categories = EventTypes.objects.all()
         page = self.request.GET.get('page')
-        
-        print self.kwargs['event_filter'], "hhhhhhhhhhhhhhhhhhhhhhhhhiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii"
-        
+        cat_id = None
+        cat = self.request.GET.get('cat')
         if self.kwargs['event_types'] is not None:
             event_cat_id = EventCategories.objects.filter(url_key=self.kwargs['event_types']).all()
             event_id  = CategoriesOfEvents.objects.filter(event_category=event_cat_id).all()
@@ -223,9 +258,19 @@ class EventType(TemplateView):
                 event_types = Events.objects.filter(pk=ev_id.event_id, city=self.kwargs['city']).values('event_name', 'tag_line', 'logo', 'url_key').order_by('event_start_date')
                 if len(event_types) > 0:
                     events.append(event_types[0])
+                    
+        if cat is not None:
+            event_type_id = EventTypes.objects.filter(url_key=cat).all()
+            cat_id  = TypesOfEvents.objects.filter(event_types=event_type_id).all()
+           
+        if cat_id is not None:
+            events = [] 
+            for c_id in cat_id:
+                event_types = Events.objects.filter(pk=c_id.event_id, city=self.kwargs['city']).values('event_name', 'tag_line', 'logo', 'url_key').order_by('event_start_date')
+                if len(event_types) > 0:
+                    events.append(event_types[0])    
         
         paginator = Paginator(events, self.paginate_by)
-        
         try:
             file_exams = paginator.page(page)
         except PageNotAnInteger:
@@ -236,6 +281,8 @@ class EventType(TemplateView):
         context['events'] = file_exams
         context['event_categories'] = event_categories
         context['num_page'] = paginator.num_pages
+        context['cat'] = cat
+        
            
         return context
     

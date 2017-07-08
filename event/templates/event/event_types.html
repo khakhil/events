@@ -26,7 +26,6 @@
                                             </ul>
                 </div>
             </div>
-            
             <div class="col-lg-9 col-md-9 col-sm-8">
                 <div class="search_sortby rw m_b_15 text-right">
                     <h2><b>{{request.path|slice:"15:"|slice:"-1"|upper }}</b></h2>
@@ -42,26 +41,27 @@
                         {% endfor %}
                         </ul>
                     </div>
-             {% if is_paginated %}       
+                    
+             {% if num_page != 1 %}       
 	             <ul class="pagination">
 				
 				{% if events.has_previous %}
-					<li><a href="?page={{ events.previous_page_number }}" data-ci-pagination-page="{{ events.previous_page_number }}"><i class="fa fa-chevron-left"></i></a></li>
+					<li><a href="{% if cat is not None%}?cat={{cat}}&page={{ events.previous_page_number }}{%else%}?page={{ events.previous_page_number }}{%endif%}" data-ci-pagination-page="{{ events.previous_page_number }}"><i class="fa fa-chevron-left"></i></a></li>
 				{% endif %}
 				
 				
 				{% for pages in events.paginator.page_range  %}
 				{% if events.number == pages %}
-	         		<li class="active"><a href="?page={{ pages }}">{{ pages }}</a></li>
+	         		<li class="active"><a href="{% if cat is not None%}?cat={{cat}}&page={{ pages }} {%else%}?page={{ pages }}{%endif%}">{{ pages }}</a></li>
 			    {% else %}
-			         <li><a href="?page={{ pages }}">{{ pages }}</a></li>
+			         <li><a href="{% if cat is not None%}?cat={{cat}}&page={{ pages }}{%else%}?page={{ pages }}{%endif%}">{{ pages }}</a></li>
 			    {% endif %}
 									
 	           {% endfor %} 
 	           
 								    
 				{% if events.has_next %}
-					<li><a href="?page={{ events.next_page_number }}" data-ci-pagination-page="{{ events.next_page_number }}"><i class="fa fa-chevron-right"></i></a></li>
+					<li><a href="{% if cat is not None%}?cat={{cat}}&page={{ events.next_page_number }}{%else%}?page={{ events.next_page_number }}{%endif%}" data-ci-pagination-page="{{ events.next_page_number }}"><i class="fa fa-chevron-right"></i></a></li>
 				{% endif %}
 	           </ul>
 			{% endif %}

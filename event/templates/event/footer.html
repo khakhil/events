@@ -39,7 +39,7 @@
                                     <input value="Enter your email here..." type="text" class="t_bx_1 m_b_10"> 
                                     <input type="submit" value="Subscribe" class="btn subscribe">
                                 </form>-->
-                            <form method="post" action="" id="contact-form" accept-charset="UTF-8" name="newsfrm"><input type="hidden" name="__token" value="">
+                            <form name="newsfrm" method="post" action="" id="contact-form" accept-charset="UTF-8" >
                             {% csrf_token %}
                             
                             <input type="hidden" value="customer" name="form_type" />
@@ -48,7 +48,7 @@
                             <input type="hidden" name="contact[first_name]" value="Newsletter" />
                             <input type="hidden" name="contact[last_name]" value="Subscriber" />
                             <input type="email" id="email" class="t_bx_1 m_b_10" name="email" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Enter your email address..." />
-                            <input type='submit' class="btn subscribe" value="signup" name="signup"/>
+                            <input type='submit' class="btn subscribe" value="signup" name="newsfrm"/>
                         </form>
                             </div>
                         </div>

@@ -7,7 +7,7 @@
         <div class="clearfix"></div> 
         <div class="srch_btm rw">
             <div class="search_form">
-                <form action="" id="company-manage-form" method="post" class="form-horizontal adminex-form" enctype="multipart/form-data" accept-charset="utf-8"><input type="hidden" name="__token" value="">
+                <form name= "searchform" action="{% url 'event:events'%}" id="company-manage-form" method="post" class="form-horizontal adminex-form" enctype="multipart/form-data" accept-charset="utf-8" role="form"><input type="hidden" name="__token" value="">
                 {% csrf_token %}
                 <input type="text" name="keyword" id="keyword" placeholder="Keyword" value="" class="form-control txt_1"/>
                 <select class="form-control txt_2" type="text" name="city" id="city" value="" >
@@ -22,48 +22,9 @@
                     <option>Hyderabad</option>
                     <option>Ahmedabad</option>
                 </select>                 
-                <button class="btn" type="submit">Search</button>
+                <button class="btn" type="search" name="searchform">Search</button>
                 </form>            </div></div>
-        <!--            <form class="search_form">-->
-
-        <!--                            <div>
-                                        <div>
-                                            <div>
-                                                <input type="text" class="form-control txt_1" name="keyword" id="keyword" value="" class="form-control"/>
-                                            </div>
-                                        </div>
-                                        <select class="form-control txt_2">
-                                            <option>Select City.........</option>
-                                            <option>Jaipur</option>
-                                            <option>Goa</option>
-                                            <option>Delhi</option>
-                                            <option>Bangalore</option>
-                                            <option>Kolkata</option>
-                                            <option>Mumbai</option>
-                                            <option>Gurgaon</option>
-                                            <option>Hyderabad</option>
-                                            <option>Ahmedabad</option>
-                                        </select> 
-                                        <button class="btn" type="submit">Search</button>
-                                    </div>-->
-        <!--</form>-->
-        <!--            <form class="search_form">
-                        <input type="text" class="form-control txt_1" placeholder="Keyword">
-                        <select class="form-control txt_2">
-                            <option>Select City.........</option>
-                            <option>Jaipur</option>
-                            <option>Goa</option>
-                            <option>Delhi</option>
-                            <option>Bangalore</option>
-                            <option>Kolkata</option>
-                            <option>Mumbai</option>
-                            <option>Gurgaon</option>
-                            <option>Hyderabad</option>
-                            <option>Ahmedabad</option>
-                        </select> 
-                        <input class="btn" value="Search" type="submit">
-                    </form>-->
-    </div>
+                    </div>
 </div>
 </div>
 <section class="middle">
